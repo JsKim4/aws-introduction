@@ -50,3 +50,17 @@
     - Read Replica 의 Read Replica생성이 가능함 (Letency 존재함)
     - 각각의 Read Replica 는 자기만의 EndPoint로 구분 가능함
     
+## Elastic Cache
+- 클라우드 내에서 In-memory 캐시를 만들어줌
+- DB가 아닌 캐시에서 빠른속도로 데이터 Read가 가능함
+- Read-Heavy 어플리케이션에서 Latenct 감소 효과가 있음
+
+- Elastic Cahce 의 타입
+    - Memcached
+        - 단순한 캐싱 모델이 필요할때
+        - Object Caching 이 주 목적 일때
+        - Cache size 를 마음대로 변경해야 할때
+    - Redis
+        - Multi-AZ를 지원함
+        - List,Set 과 같은 데이터 셋을 사용할때
+        - 정렬이 필요할떄

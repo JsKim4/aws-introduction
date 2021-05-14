@@ -66,4 +66,4 @@
 1. EC2 생성
 2. 키발급
 3. 콘솔 접속 :  ssh -i `key.pem` `ec2-user(기본 유저 id)`@`ec2-ip`
-4. 서비스 재시작시 동시시작 명령어 : chkconfig httpd on
+4. 서비스 재시작시 동시시작 명령어 : chkconfig httpd onpi
